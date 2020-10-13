@@ -1,5 +1,5 @@
 # CodeSet
-Collection of contests and problems from different coding platforms.
+Android application which has a collection of contests and problems from different coding platforms.
 
 Get notified on upcoming contests of various platforms.
 
