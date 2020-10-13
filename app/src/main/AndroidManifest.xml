@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.codeset">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:name=".Notify"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".AtCoder"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Profiles" />
+        <activity android:name=".Contests" />
+        <activity
+            android:name=".Settings"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SphereOnlineJudge"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CodeChef"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CodeForces"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".SchedulerProblemLoader"
+            android:directBootAware="true" />
+        <receiver
+            android:name=".SchedulerSubmissionLoader"
+            android:directBootAware="true" />
+        <receiver
+            android:name=".SchedulerRatingLoader"
+            android:directBootAware="true" />
+        <receiver
+            android:name=".SchedulerContestLoader"
+            android:directBootAware="true" />
+        <receiver
+            android:name=".Remind"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

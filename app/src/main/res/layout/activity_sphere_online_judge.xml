@@ -1,0 +1,64 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SphereOnlineJudge"
+    style="@style/platformPage">
+    <ImageView
+        style="@style/platformImage"
+        android:src="@drawable/sphere_online_judge_full"
+        android:id="@+id/platformImage"/>
+    <TextView
+        style="@style/platformUser"
+        android:id="@+id/platformUser"
+        android:text="@string/problemSet"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/queryRow">
+
+        <EditText
+            android:id="@+id/searchQuerySPOJ"
+            style="@style/inputBox"
+            android:layout_width="180dp"
+            android:hint="@string/name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/searchLevelSPOJ"
+            style="@style/dropDownSpinner"
+            android:layout_width="90dp"
+            app:layout_constraintStart_toEndOf="@id/searchQuerySPOJ"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/searchLevelArrowSPOJ"
+            style="@style/dropDownImage"
+            app:layout_constraintStart_toEndOf="@id/searchLevelSPOJ"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/clearSPOJ"
+            style="@style/clearFilter"
+            app:layout_constraintStart_toEndOf="@+id/searchLevelArrowSPOJ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        style="@style/resultText"
+        android:id="@+id/result"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSPOJ"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".CodeChef"
+    style="@style/platformPage">
+        <ImageView
+            style="@style/platformImage"
+            android:src="@drawable/code_chef_full"
+            android:id="@+id/platformImage"/>
+        <TextView
+            style="@style/platformUser"
+            android:id="@+id/platformUser"
+            android:text="@string/problemSet"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/queryRow">
+
+            <EditText
+                android:id="@+id/searchQueryCC"
+                style="@style/inputBox"
+                android:layout_width="300dp"
+                android:hint="@string/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/clearCC"
+                style="@style/clearFilter"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/searchQueryCC"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/queryRow"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/searchLevelCC"
+                style="@style/dropDownSpinner"
+                android:layout_width="150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/searchLevelArrowCC"
+                style="@style/dropDownImage"
+                app:layout_constraintStart_toEndOf="@+id/searchLevelCC"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/searchStatusCC"
+                style="@style/dropDownSpinner"
+                android:layout_width="150dp"
+                app:layout_constraintStart_toEndOf="@+id/searchLevelArrowCC"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/searchStatusArrowCC"
+                style="@style/dropDownImage"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/searchStatusCC"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            style="@style/resultText"
+            android:id="@+id/result"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCC"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+</LinearLayout>

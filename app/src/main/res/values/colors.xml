@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00ccff</color>
+    <color name="colorPrimaryDark">#0000ff</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="buttonColor">#aaffff</color>
+    <color name="textColor">#000000</color>
+
+    <color name="unsolved">#ffffff</color>
+    <color name="unsolvedBold">#808080</color>
+    <color name="tried">#ffb273</color>
+    <color name="triedBold">#c4671a</color>
+    <color name="solved">#6ffcb3</color>
+    <color name="solvedBold">#008741</color>
+
+    <color name="newbie">#808080</color>
+    <color name="pupil">#008000</color>
+    <color name="specialist">#03a89e</color>
+    <color name="expert">#0000ff</color>
+    <color name="candidateMaster">#a0a</color>
+    <color name="master">#ff8c00</color>
+    <color name="grandMaster">#ff0000</color>
+    <color name="legendary">#000000</color>
+    
+    <color name="ccGray">#666666</color>
+    <color name="ccGreen">#1e7d23</color>
+    <color name="ccBlue">#3366cc</color>
+    <color name="ccViolet">#684273</color>
+    <color name="ccYellow">#ffbf00</color>
+    <color name="ccOrange">#ff7f00</color>
+    <color name="ccRed">#d0011b</color>
+
+    <color name="acUnrated">#000000</color>
+    <color name="acGray">#808080</color>
+    <color name="acBrown">#804000</color>
+    <color name="acGreen">#008000</color>
+    <color name="acCyan">#00c0c0</color>
+    <color name="acBlue">#0000ff</color>
+    <color name="acYellow">#c0c000</color>
+    <color name="acOrange">#ff8000</color>
+    <color name="acRed">#ff0000</color>
+
+
+</resources>

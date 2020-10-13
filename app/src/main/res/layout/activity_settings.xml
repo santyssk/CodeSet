@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="@drawable/background_plain">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Username Header-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    android:gravity="bottom"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/settings"/>
+            </LinearLayout>
+
+            <!--CodeForces-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/code_forces_logo"/>
+                <EditText
+                    android:layout_marginStart="10dp"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cfUserInput"
+                    style="@style/inputBox"
+                    android:hint="@string/cfHandle"/>
+                <Button
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cfButton"
+                    android:text="@string/set"/>
+
+            </LinearLayout>
+
+            <!--CodeChef-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/code_chef_logo"/>
+                <EditText
+                    android:layout_marginStart="10dp"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ccUserInput"
+                    style="@style/inputBox"
+                    android:hint="@string/ccHandle"/>
+                <Button
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ccButton"
+                    android:text="@string/set"/>
+
+            </LinearLayout>
+
+            <!--SPOJ-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/sphere_online_judge_logo"/>
+                <EditText
+                    android:layout_marginStart="10dp"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spojUserInput"
+                    style="@style/inputBox"
+                    android:hint="@string/spojHandle"/>
+                <Button
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spojButton"
+                    android:text="@string/set"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/at_coder_logo"/>
+                <EditText
+                    android:layout_marginStart="10dp"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/acUserInput"
+                    style="@style/inputBox"
+                    android:hint="@string/acHandle"/>
+                <Button
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/acButton"
+                    android:text="@string/set"/>
+            </LinearLayout>
+
+            <!--Done-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/done"
+                    android:id="@+id/userDone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

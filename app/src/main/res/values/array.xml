@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="solveStatus">
+        <item>All Problems</item>
+        <item>UnAttempted</item>
+        <item>Tried</item>
+        <item>Solved</item>
+    </string-array>
+
+    <string-array name="levelsCC">
+        <item>Any Difficulty</item>
+        <item>Beginner</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Challenge</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="levelsSPOJ">
+        <item>Any Difficulty</item>
+        <item>Classical</item>
+        <item>Challenge</item>
+        <item>Partial</item>
+        <item>Tutorial</item>
+        <item>Riddle</item>
+        <item>Basics</item>
+    </string-array>
+
+    <string-array name="contestPlatforms">
+        <item>Any</item>
+        <item>Codeforces</item>
+        <item>CodeChef</item>
+        <item>AtCoder</item>
+        <item>TopCoder</item>
+        <item>Google</item>
+        <item>LeetCode</item>
+        <item>Other</item>
+    </string-array>
+</resources>

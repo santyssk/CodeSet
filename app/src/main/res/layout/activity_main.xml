@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_plain"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/mainPage"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:src="@drawable/code_forces_logo"
+                android:id="@+id/cf" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/code_chef_logo"
+                android:id="@+id/cc"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/at_coder_logo"
+                android:id="@+id/ac" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/sphere_online_judge_logo"
+                android:id="@+id/spoj" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:text="@string/contest"
+                android:id="@+id/contests"/>
+
+            <Button
+                style="@style/buttonStyle"
+                android:text="@string/profiles"
+                android:id="@+id/profiles"/>
+            <Button
+                style="@style/buttonStyle"
+                android:text="@string/settings"
+                android:id="@+id/settings"/>
+            <Button
+                style="@style/buttonStyle"
+                android:text="@string/about"
+                android:id="@+id/about"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/aboutPage"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp">
+        <TextView
+            android:text="@string/aboutApp"
+            style="@style/aboutPageText"/>
+        <TextView
+            android:text="@string/aboutUsername"
+            style="@style/aboutPageText"/>
+        <TextView
+            android:text="@string/aboutLoading"
+            style="@style/aboutPageText"/>
+        <TextView
+            android:text="@string/aboutThanks"
+            style="@style/aboutPageText"/>
+        <TextView
+            android:text="@string/disClaimer"
+            android:textStyle="bold"
+            style="@style/aboutPageText"/>
+        <TextView
+            android:text="@string/aboutDisclaimer"
+            android:layout_marginTop="0dp"
+            style="@style/aboutPageText"/>
+        <TextView
+            android:text="@string/aboutUpdate"
+            style="@style/aboutPageText"/>
+        <LinearLayout
+            style="@style/aboutPageText"
+            android:gravity="center_horizontal">
+            <Button
+                style="@style/buttonStyle"
+                android:text="@string/close"
+                android:id="@+id/aboutClose"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

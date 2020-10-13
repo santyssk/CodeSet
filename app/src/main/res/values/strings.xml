@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">CodeSet</string>
+    <string name="problemSet">ProblemSet</string>
+    <string name="id">Id</string>
+    <string name="index">Index</string>
+    <string name="minRating">Min Rating</string>
+    <string name="maxRating">Max Rating</string>
+    <string name="nameTag">Problem Name or Tag</string>
+    <string name="name">Problem Name</string>
+    <string name="clear">Clear</string>
+    <string name="cfHandle">CodeForces Handle</string>
+    <string name="ccHandle">CodeChef Handle</string>
+    <string name="spojHandle">SPOJ Handle</string>
+    <string name="acHandle">AtCoder Handle</string>
+    <string name="change">Change</string>
+    <string name="set">Set</string>
+    <string name="done">Done</string>
+    <string name="disClaimer">Disclaimer!</string>
+    <string name="next">Next</string>
+    <string name="close">Close</string>
+    <string name="contest">Contests</string>
+    <string name="profiles">Profiles</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="choosePlatform">Select Platform</string>
+    <string name="fetchProblem">Fetching Problems</string>
+    <string name="fetchSubmission">Fetching Submissions</string>
+    <string name="fetchRating">Fetching Ratings</string>
+    <string name="fetchContest">Fetching Contests</string>
+    <string name="unrated">Unrated</string>
+    <string name="zeroResultProblem">There is no problem matching your search!</string>
+    <string name="zeroResultContest">There is no contest matching your search!</string>
+    <string name="loadingProblem">Please wait for few seconds. The problems are currently being loaded.</string>
+    <string name="loadingContest">Please wait for few seconds. The contests are currently being loaded.</string>
+    <string name="error">There seems to be some unknown error. Please check again later.</string>
+
+    <string name="aboutApp">The app allows you to be remained about upcoming Competitive contests in some platforms like Codeforces, Codechef, TopCoder, Sphere Online Judge, AtCoder and Google.
+        The app also allows you to search for all problems present in some these platforms.</string>
+    <string name="aboutUsername">Enter your username of corresponding platforms in the Settings to see a personalized result.</string>
+    <string name="aboutLoading">The problems of the platforms are updated every 6 hours. User submissions are updated every hour. For every 4 hours contests and rating details are updated.</string>
+    <string name="aboutThanks">Thanks to Codeforces for their APIs and https://github.com/kenkoooo for unofficial AtCoder APIs.</string>
+    <string name="aboutDisclaimer">Data updates are subjected the details provided in above APIs. Some of the AtCoder problems are in japanese.</string>
+    <string name="aboutUpdate">Look out for updates. The app will be updated when problems from other platforms are accessible or when new functionality can be implemented.</string>
+
+</resources>

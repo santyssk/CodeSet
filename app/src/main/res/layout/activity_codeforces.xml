@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".CodeForces"
+    style="@style/platformPage">
+        <ImageView
+            style="@style/platformImage"
+            android:src="@drawable/code_forces_full"
+            android:id="@+id/platformImage"/>
+        <TextView
+            style="@style/platformUser"
+            android:id="@+id/platformUser"
+            android:text="@string/problemSet"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/queryRow">
+
+            <EditText
+                android:id="@+id/searchIdCF"
+                style="@style/inputBox"
+                android:layout_width="90dp"
+                android:hint="@string/id"
+                android:inputType="number"
+                android:maxLength="5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/searchIndexCF"
+                style="@style/inputBox"
+                android:layout_width="50dp"
+                android:hint="@string/index"
+                android:maxLength="2"
+                app:layout_constraintStart_toEndOf="@+id/searchIdCF"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/searchMinRatingCF"
+                style="@style/inputBox"
+                android:layout_width="90dp"
+                android:hint="@string/minRating"
+                android:inputType="number"
+                android:maxLength="5"
+                app:layout_constraintStart_toEndOf="@+id/searchIndexCF"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/searchMaxRatingCF"
+                style="@style/inputBox"
+                android:layout_width="90dp"
+                android:layout_marginEnd="10dp"
+                android:hint="@string/maxRating"
+                android:inputType="number"
+                android:maxLength="5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/searchMinRatingCF"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/queryRow"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/searchQueryCF"
+                style="@style/inputBox"
+                android:layout_width="180dp"
+                android:hint="@string/nameTag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/searchStatusCF"
+                style="@style/dropDownSpinner"
+                android:layout_width="90dp"
+                app:layout_constraintStart_toEndOf="@id/searchQueryCF"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/searchStatusArrowCF"
+                style="@style/dropDownImage"
+                app:layout_constraintStart_toEndOf="@id/searchStatusCF"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/clearCF"
+                style="@style/clearFilter"
+                app:layout_constraintStart_toEndOf="@+id/searchStatusArrowCF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            style="@style/resultText"
+            android:id="@+id/result"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
+            android:id="@+id/recyclerViewCF"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+</LinearLayout>
